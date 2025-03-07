@@ -3,7 +3,7 @@ package Hafta1;
 import java.util.Scanner;
 
 public class GroceryCheckOut {
-
+ //fiyatlar
     public static float pearp = 2.14f;
     public static float applep = 2.47f;
     public static float tomatop =1.11f;
