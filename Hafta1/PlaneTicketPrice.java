@@ -7,7 +7,7 @@ public class PlaneTicketPrice {
 
         Scanner scanner = new Scanner(System.in);
 
-        //Değişkenleri kullanıcıdan alıp tanımlıyoruz
+        //Değişkenleri kullanıcıdan alıp tanımlıyoruz.
         System.out.println("Please enter distance as kilometers");
         double distance = scanner.nextDouble();
 
