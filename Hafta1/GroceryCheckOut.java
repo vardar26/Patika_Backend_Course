@@ -8,6 +8,7 @@ public class GroceryCheckOut {
 
         Scanner scanner = new Scanner(System.in);
 
+        //Kullanıcıya hangi üründen kaç kilo aldığının sorulması ve değişkenlerin tanımlanması
        System.out.println("How many kgs of pear?");
        double pear = scanner.nextDouble();
 
@@ -22,6 +23,8 @@ public class GroceryCheckOut {
 
        System.out.println("How many kgs of eggplant?");
        double eggplant = scanner.nextDouble();
+
+       //toplam fiyatın hesaplanması
 
        double totalprice = (pear * 2.14) + (apple * 3.67) + (tomato * 1.11) + (banana * 0.95) + (eggplant * 5);
        System.out.println("Your total price is " + totalprice + "$");
