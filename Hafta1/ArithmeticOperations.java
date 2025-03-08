@@ -19,7 +19,7 @@ public class ArithmeticOperations {
 
 
         //sonucu hesaplayıp çıktı veriyoruz
-        double result = numa+numb*numc-numb;
+        double result = numa+(numb*numc)-numb;
         System.out.println("The result of " + numa + " + " + numb + " * " + numc + " - " + numb + " = " + result);
 
     }

@@ -22,4 +22,6 @@ public class BodyMassIndex {
         //kullanıcıya çıktı ver
         System.out.println("Your BMI is  " + bmi);
 
+
+
     }}
