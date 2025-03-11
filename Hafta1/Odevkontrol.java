@@ -5,41 +5,33 @@ import java.util.Scanner;
 public class Odevkontrol {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Matrisin satır bilgisi: ");
-        int row = input.nextInt();
-        System.out.print("Matrisin sütun bilgisi: ");
-        int column = input.nextInt();
 
-        int[][] firstMatrix = new int[row][column];
+        String psw;
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Matrisin değerlerini giriniz: ");
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
-                firstMatrix[i][j] = input.nextInt();
-            }
+        System.out.println("Kurallar \n" +
+                "1- En az 8 karakter içermeli\n" +
+                "2- Space karakteri içermemeli\n" +
+                "3- İlk harf büyük harf olmalı\n" +
+                "4- Son karakteri '?' olmalı"
+        );
+
+        System.out.print("Kurallara Göre Bir Şifre Giriniz: ");
+        psw = scanner.nextLine();
+
+        // Şartları kontrol et
+        boolean uzunlukUygun = psw.length() >= 8; // Uzunlugu Kontrol Ediyor
+        boolean boslukIcermez = !psw.contains(" "); //Boşluk Kontrol Ediyor
+        boolean ilkHarfBuyuk = psw.matches("^[A-Z].*");// Büyük Harfle mi Başladıgını Kontrol Ediyor
+        boolean sonKarakterSoruIsareti = psw.endsWith("?"); //Son Karakterin ? oldugunu Kontrol Ediyor
+
+        // Bütün koşulları sağlayıp sağlamadığını kontrol et
+        if (uzunlukUygun && boslukIcermez && ilkHarfBuyuk && sonKarakterSoruIsareti) {
+            System.out.println("Geçerli Şifre");
+        } else {
+            System.out.println("Geçersiz Şifre");
         }
 
-        //İlk matris
-        for (int i = 0; i < firstMatrix.length; i++) {
-            for(int j =0; j<firstMatrix[i].length; j++){
-                System.out.print(firstMatrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-        int[][] newMatrix = new int[column][row];
-        for (int i = 0; i < row; i++) {
-            for(int j=0; j<column; j++){
-                newMatrix[j][i]=firstMatrix[i][j];
-            }
-        }
-
-        // Yeni oluşturulan (transpoz) matris
-        System.out.println("Matrisin transpozu ...");
-        for (int i = 0; i < newMatrix.length; i++) {
-            for(int j =0; j<newMatrix[i].length; j++){
-                System.out.print(newMatrix[i][j] + " ");
-            }
-            System.out.println();
-        }}}
+        scanner.close();
+    }
+}

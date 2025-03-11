@@ -11,5 +11,6 @@ public class StringExercise1 {
         System.out.println(firstindex);
 
         System.out.println(plants.indexOf("o"));
+
     }
 }
