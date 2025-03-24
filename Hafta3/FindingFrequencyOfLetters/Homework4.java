@@ -12,7 +12,7 @@ public class Homework4 {
 
         HashMap<Character,Integer> frequencyMap = new HashMap<>();
 
-        // ✅ Harfleri kontrol et
+        //  Harfleri kontrol ediyoruz
         for (char ch : word.toCharArray()) {
             if (frequencyMap.containsKey(ch)) {
                 // Eğer harf daha önce eklenmişse değeri artır
