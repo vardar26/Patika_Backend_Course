@@ -23,7 +23,7 @@ public class Homework4 {
             }
 
         }
-        System.out.println("\nHarf Frekansları:");
+        System.out.println("Harf Frekansları:");
         for (Map.Entry<Character, Integer> entry : frequencyMap.entrySet()) {
             System.out.println(entry.getKey() + " => " + entry.getValue());
         }
