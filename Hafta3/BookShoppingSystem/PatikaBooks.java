@@ -1,11 +1,11 @@
 package Hafta3.BookShoppingSystem;
 
 import Hafta3.BookShoppingSystem.Model.Author;
-import Hafta3.BookShoppingSystem.Model.Product;
 import Hafta3.BookShoppingSystem.Model.enums.Gender;
 import Hafta3.BookShoppingSystem.Service.AuthorService;
 import Hafta3.BookShoppingSystem.Service.ProductService;
 import Hafta3.BookShoppingSystem.Service.UserService;
+
 
 import java.time.LocalDate;
 
@@ -31,7 +31,14 @@ public class PatikaBooks {
         ProductService.create("Java Kodlama",155.8,author, LocalDate.of(2022, 9, 12));
         ProductService.create("Java Kodlama 2",255.8,author, LocalDate.of(2024, 9, 12));
         ProductService.create("Java Kodlama 3",455.8,author, LocalDate.of(2025, 9, 12));
+
+
+        ProductService.create("Av tutkusu", 99.9);
+
+
         productService.list();
+
+
 
 
     }
