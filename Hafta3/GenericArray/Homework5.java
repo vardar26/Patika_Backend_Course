@@ -6,7 +6,7 @@ public class Homework5 {
     public <T> void printArray (T[] array){
         for(T element : array){
 
-        System.out.println(element);
+        System.out.print(element + " ");
     }
     }
 
@@ -20,6 +20,7 @@ public class Homework5 {
 
 
         test.printArray(numbers);
+        System.out.println();
         test.printArray(strArray);
 
     }
