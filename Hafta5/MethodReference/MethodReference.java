@@ -12,7 +12,7 @@ public class MethodReference {
         names.add("Mehmet");
         names.add("Zeynep");
 
-        // ✅ Method reference kullanımı
+        // Method reference kullanımı
         names.forEach(System.out::println);
     }
 }
