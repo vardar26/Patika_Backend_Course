@@ -95,3 +95,6 @@ WHERE name = 'Aleda';
 DELETE FROM employee
 WHERE name = 'Murdoch';
 
+DELETE FROM employee
+WHERE name = 'Murdoch';
+
